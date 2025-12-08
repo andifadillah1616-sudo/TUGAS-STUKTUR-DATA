@@ -1,0 +1,31 @@
+Tulis algoritma yang lengkap untuk mengisi antrian record per record sebanyak 10 record selama antrian belum penuh. Apabila antrian penuh, walaupun belum mengisi 10 record, proses pengisian dihentikan.
+Algoritma PENGISIAN_ANTRIAN
+Algoritma PENGISIAN_ANTRIAN
+Deklarasi:
+QUEUE : array [1..MAX]
+FRONT, REAR : integer
+DATA : record
+i : integer
+
+Deskripsi:
+1.	Inisialisasi:
+    FRONT ← 0
+    REAR ← 0
+    MAX ← kapasitas maksimum antrian
+2.	Untuk i ← 1 sampai 10 lakukan:
+    a. Jika REAR = MAX maka
+       Tulis "Antrian penuh! Pengisian dihentikan."
+       Keluar dari perulangan
+    b. Jika tidak penuh:
+       Baca DATA (input record baru)
+       REAR ← REAR + 1
+       QUEUE[REAR] ← DATA
+       Jika FRONT = 0 maka FRONT ← 1
+       Tulis "Record ke-", i, "berhasil dimasukkan."
+3.	Tulis "Proses pengisian selesai."
+4.	Selesai
+PENJELASAN:
+•	QUEUE menyimpan data record dalam urutan antrian.
+•	FRONT menunjukkan elemen pertama, dan REAR menunjukkan elemen terakhir.
+•	Setiap kali data dimasukkan, posisi REAR bertambah satu.
+•	Jika REAR = MAX, berarti antrian penuh dan pengisian berhenti meskipun belum mencapai 10 record.

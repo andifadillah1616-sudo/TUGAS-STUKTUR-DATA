@@ -1,0 +1,25 @@
+Jika n = 100, maka untuk: 
+A.	Bila F = 15, dan R = 37, maka jumlah pengantri yang belum dilayani = …….. 
+	Diketahui:
+		F = 15 
+		R = 37
+	Ditanya:
+		jumlah pengantri yang belum dilayani
+
+	Rumus: R - F + 1
+		37 - 15 + 1
+
+	Hasil: 23
+	Jadi, jumlah pengantri yang belum dilayani = 23 orang
+
+b.	Bila F = 15, dan R = 37, maka jumlah kolom yang masih bisa diisi = …….
+	Diketahui:
+		F = 15
+		R = 37
+	Ditanya:
+		jumlah kolom yang masih bisa diisi
+
+	Rumus:  n - R – 1
+		100 – 37 – 1
+		Hasil: 62
+	Jadi, jumlah kolom yang masih bisa diisi = 62 kolom

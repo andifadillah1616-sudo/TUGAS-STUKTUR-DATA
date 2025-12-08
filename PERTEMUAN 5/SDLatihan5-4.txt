@@ -1,0 +1,17 @@
+Tulis algoritma yang lengkap untuk mengambil isi Stack1 satu persatu dan mencetaknya ke layar, sampai stack1 isinya kosong
+Algoritma CETAK_STACK1
+Deklarasi:
+STACK : array [0..MAX-1]
+TOP1 : integer
+DATA : variabel sementara untuk menampung data
+Deskripsi:
+	•	Jika TOP1 = -1, maka Tulis "Stack1 kosong"
+Else
+	•	Selama TOP1 ≠ -1 lakukan
+a.	DATA ← STACK[TOP1]
+b.	Tulis "Isi Stack1: ", DATA
+c.	TOP1 ← TOP1 – 1
+	•	Tulis "Semua data Stack1 sudah ditampilkan"
+	•	Selesai
+PENJELASAN:
+Langkah ini menggunakan proses POP berulang, tapi hanya untuk menampilkan isi Stack1. Perulangan berhenti ketika TOP1 = -1, artinya semua elemen sudah dikeluarkan dan Stack1 kosong.

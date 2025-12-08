@@ -1,0 +1,35 @@
+Susun algoritma untuk menempatkan Pointer Q sehingga menunjuk: 
+a.	Simpul no (1) 
+	Q menunjuk node pertama (head dari linked list). 
+	Q langsung menunjuk node pertama (INFO= 1). 
+	Q ← FIRST
+
+b.	Simpul no (7) 
+	Q berpindah dari simpul pertama ke simpul ketujuh. 
+	Setelah perulangan ke-7, Q menunjuk node ke-7. 
+	Q ← FIRST 
+	I ← 1 
+	WHILE (I < 7) DO 
+	Q ← Q->LINK 
+	I ← I + 1 
+	ENDWHILE
+
+c.	Simpul akhir 
+	Langsung ditugaskan menunjuk node terakhir. 
+	Q sekarang menunjuk node terakhir yang memiliki LINK= NULL. Q ← LAST
+
+d.	Simpul dengan nilai INFO = 50 
+	Pencarian berdasarkan nilai data (bukan urutan). 
+	Jika INFO = 50 ditemukan, Q menunjuk node tersebut. Jika tidak ditemukan, maka Q = NULL. 
+	Q ← FIRST 
+	WHILE (Q != NULL) AND (Q->INFO!=50) DO
+	Q ← Q->LINK 
+	ENDWHILE
+
+e.	Simpul yang letaknya satu simpul di depan (disebelah kiri) simpul dengan nilai INFO = 50 
+	mencari node sebelum node dengan INFO = 50. 
+	Setelah loop, Q menunjuk node yang berada tepat di depannode dengan INFO = 50. 
+	Q ← FIRST 
+	WHILE (Q->LINK ! = NULL) AND (Q->LINK- >INFO ! = 50) DO 
+	Q ← Q->LINK 
+	ENDWHILE

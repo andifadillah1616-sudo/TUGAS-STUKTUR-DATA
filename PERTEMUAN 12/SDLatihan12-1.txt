@@ -1,0 +1,18 @@
+a. Nama-nama pointer sesuai nomornya	
+(1)	Menunjuk ke node pertama dalam linked list, namanya Q (pointer awal/list head)
+(2)	Menunjuk ke bagian LEFT dari node pertama, namanya Q->LEFT (biasanya bernilai NULL untuk node pertama)
+(3)	Menunjuk ke alamat node sebelumnya (tidak ada karena ini node pertama), namanya NULL
+(4)	Panah dari RIGHT node pertama menuju node kedua, namanya Q->RIGHT
+(5)	Panah dari LEFT node kedua menuju node pertama, namanya (Q->RIGHT)->LEFT
+(6)	Panah dari RIGHT node kedua menuju NULL, namanya (Q->RIGHT)->RIGHT = NULL
+(7)	Isi bagian INFO node pertama, namanya Q->INFO
+(8)	Isi bagian INFO node kedua, namanya (Q->RIGHT)->INFO
+
+b. Pointer yang nilainya sama
+(4) dan (5) bernilai sama
+karena keduanya menunjuk ke node kedua ↔ node pertama (saling terhubung dua arah).
+
+(4): Q->RIGHT
+
+(5): (Q->RIGHT)->LEFT
+Jadi mereka menunjuk ke alamat node yang sama.

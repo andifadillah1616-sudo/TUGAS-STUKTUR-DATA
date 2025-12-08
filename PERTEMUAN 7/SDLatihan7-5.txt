@@ -1,0 +1,13 @@
+Tulis untuk menghitung dan mencetak jumlah tempat (elemen) yang ada isinya bila diketahui nilai F dan R tanpa mengetahui nilai Counter. 
+Langkah-langkah Algoritma:
+1.	Mulai 
+2.	Diketahui nilai F (Front), R (Rear), dan MAX (kapasitas total queue). 
+3.	Jika antrian kosong, yaitu F = -1, maka: 
+	•	Tampilkan pesan “Jumlah elemen = 0”. 
+	•	Selesai.
+4.	Jika R > = F, maka jumlah elemen dihitung dengan: 
+5.	Jumlah elemen = (R - F) + 1 
+6.	Jika R < F, artinya posisi Rear sudah melingka rmelewati Front, maka jumlah elemen dihitung dengan: 
+7.	Jumlah elemen = (MAX - F) + (R+ 1) 
+8.	Cetak hasil perhitungan jumlah elemen yang berisi.
+9.	Selesai.

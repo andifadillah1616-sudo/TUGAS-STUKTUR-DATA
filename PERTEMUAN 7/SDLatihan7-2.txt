@@ -1,0 +1,17 @@
+Tulis algoritma lengkap untuk: 
+a.	Insert sebuah record Langkah-langkah algoritma: 
+	•	Mulai 
+	•	Periksa apakah antrian penuh, dengan kondisi: (Rear + 1) % MAX == Front Jika ya, tampilkan pesan “Queue Overflow”dan 			berhenti. 
+	•	Jika antrian kosong (Front == -1), maka set: Front = Rear = 0 
+	•	Jika tidak kosong, ubah posisi Rear secaramelingkar: Rear = (Rear + 1) % MAX 123 
+	•	Masukkan data baru ke posisi Queue[Rear]. 
+	•	Tampilkan pesan “Data berhasil dimasukkankeantrian”. 
+	•	Selesai
+
+b.	Delete sebuah record Langkah-langkah algoritma: 
+	•	Mulai 
+	•	Periksa apakah antrian kosong, dengankondisi: Front == -1 Jika ya, tampilkan pesan “Queue Underflow”dan berhenti. 
+	•	Ambil data dari posisi Queue[Front]. 
+	•	Jika Front == Rear, berarti data terakhirdihapus — set: Front = Rear = -1 (artinya antrian kembali kosong) 
+	•	Jika tidak, geser posisi Front secara melingkar: Front = (Front + 1) % MAX6. Tampilkan data yang dihapus. 
+	•	Selesai.

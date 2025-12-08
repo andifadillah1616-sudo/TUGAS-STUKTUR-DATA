@@ -1,0 +1,20 @@
+Tulis algoritma yang lengkap untuk mengambil isi Stack2 satu persatu dan mencetaknya ke layar monitor, sampai stack2 isinya kosong.
+
+Algoritma CETAK_STACK2
+Deklarasi:
+STACK : array [0..MAX-1]
+TOP2 : integer
+DATA : variabel sementara untuk menampung data
+Deskripsi:
+•	Jika TOP2 = MAX, maka Tulis "Stack2 kosong" 
+Else
+•	Selama TOP2 ≠ MAX lakukan
+a.	DATA ← STACK[TOP2]
+b.	Tulis "Isi Stack2: ", DATA
+c.	TOP2 ← TOP2 + 1
+•	Tulis "Semua data Stack2 sudah ditampilkan"
+•	Selesai
+PENJELASAN:
+•	Proses dilakukan dengan cara POP berulang dari Stack2.
+•	Setiap data yang diambil langsung ditampilkan ke layar.
+•	Perulangan berhenti jika TOP2 = MAX, yang artinya Stack2 sudah kosong.

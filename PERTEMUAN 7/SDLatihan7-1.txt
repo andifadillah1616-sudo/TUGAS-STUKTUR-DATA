@@ -1,0 +1,22 @@
+Sebutkan ciri circular Queue dalam kondisi:
+a.	Kosong
+Circular Queue dikatakan kosong apabila tidak ada elemen yang tersimpan di dalam antrian. Secara logika program, kondisi ini ditandai dengan nilai Front = -1 dan Rear = -1, atau ketika Front sudah melewati Rear setelah proses penghapusan semua data (Dequeue). Pada kondisi ini, operasi Dequeue tidak dapat dilakukan karena tidak ada data yang bisa diambil. 
+
+b.	Penuh 
+Circular Queue dikatakan penuh apabila seluruh ruang pada antrian telah terisi data. Kondisi ini terjadi saat posisi Rear berada satu langkah di belakang Front dalam pergerakan melingkar, yaitusecara logika (Rear + 1) %MAX== Front. Pada keadaan ini, operasi Enqueue tidak dapat dilakukan lagi karena tidak ada ruang kosong untuk menambahkan data baru. 
+
+c.	Bisa diisi 
+Circular Queue disebut bisa diisi apabila masih terdapat ruang kosong untuk menambahkan data baru, yaitu saat kondisi belum penuh dan (Rear +1) %MAX != Front. Artinya, proses Enqueue masih dapat dilakukan tanpa menyebabkan Overflow. 
+
+d.	Ada isinya 
+Circular Queue dikatakan ada isinya apabila sudah terdapat satu atau lebih data di dalam antrian, namun belum mencapai kapasitas penuh. Dalam kondisi ini, operasi Enqueue (penambahan data) dan Dequeue(penghapusan data) masih bisa dilakukan secara bergantian.
+
+
+
+
+e.	Hanya berisi 
+10 record Jika Circular Queue hanya berisi 10 record, berarti jumlah elemen yang sedang aktif di dalam antrian adalah 10 buah. Kondisi ini bisa ditulis secara matematis sebagai: 
+Jumlah elemen = (Rear - Front + MAX) %MAX+1= 10.Antrian belum penuh, tetapi sudah memiliki 10data di dalamnya. 
+
+f.	Tempat yang kosong hanya ada 10 tempat. 
+Jika Circular Queue memiliki 10 tempat kosong, berarti kapasitas total antrian dikurangi jumlah elemen yang terisi menghasilkan nilai 10. Dengan kata lain, Ruang kosong = MAX- jumlah elemen=10. Kondisi ini menandakan antrian masih bisa diisi 10 data lagi sebelum menjadi penuh, sehingga operasi Enqueue masih dapat dilakukan hingga sisa tempat terisi seluruhnya.

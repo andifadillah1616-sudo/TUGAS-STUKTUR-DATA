@@ -1,0 +1,35 @@
+Sudah ada Linked List seperti no 2. Diatas.
+a.	Menghitung dan mencetak jumlah simpul 
+	Q ← FIRST 
+	JUMLAH ← 0 
+	WHILE (Q != NULL) DO 
+	JUMLAH ← JUMLAH + 1 
+	Q ← Q->LINK 
+	ENDWHILE 
+	CETAK "Jumlah simpul = ", JUMLAH
+
+b.	Menghitung dan mencetak Total INFO (25+12+…….+27,14) 
+	Q ← FIRST 
+	TOTAL ← 0 
+	WHILE (Q != NULL) DO 
+	TOTAL ← TOTAL + Q->INFO 
+	Q ← Q->LINK 
+	ENDWHILE 
+	CETAK "Total INFO = ", TOTAL
+
+c.	Mencetak semua nilai INFO ke layar 
+	Q ← FIRST 
+	WHILE (Q != NULL) DO 
+	CETAK Q->INFO 
+	Q ← Q->LINK 
+	ENDWHILE
+	d.	Mencetak jumlah simpul yang nilai INFO nya = 50
+	Q ← FIRST 
+	HITUNG ← 0 
+	WHILE  (Q != NULL) DO 
+	IF (Q->INFO == 50) THEN 
+	HITUNG ← HITUNG + 1
+	ENDIF 
+	Q ← Q->LINK 
+	ENDWHILE 
+	CETAK  "Jumlah simpul dengan INFO =50 adalah ",  HITUNG

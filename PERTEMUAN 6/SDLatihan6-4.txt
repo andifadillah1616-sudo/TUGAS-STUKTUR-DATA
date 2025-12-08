@@ -1,0 +1,16 @@
+Sebutkan ciri dari Linier Queue untuk kondisi: 
+a.	Kosong taka da isinya 
+b.	Penuh, tak bisa diisi 
+c.	Bisa diisi 
+d.	Ada isinya 
+e.	Antrian tak bisa diisi lagi, tapi belum ada isi antrian yang sudah keluar atau sudah dilayani 
+f.	Antrian perlu direset
+Kondisi		FRONT		REAR		Keterangan
+Kosong		-1		-1		Tidak ada data
+Penuh		0 atau >0	MAX-1		Semua Posisi Terisi
+Bisa diisi	≥ 0		< MAX -		Masih ada ruang kosong
+Ada Isinya	≥ 0		≥ FRONT		Sedang digunakan
+Tidak, 
+bisa diisi,belum 
+ada data keluar	  0		MAX - 1		Antrian penuh tapi belum dikeluarkan
+Perlu direset	 >0		MAX-1		Ada ruang di depan tapi tidak bisa digunakan

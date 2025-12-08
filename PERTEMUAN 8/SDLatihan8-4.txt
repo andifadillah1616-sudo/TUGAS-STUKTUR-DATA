@@ -1,0 +1,14 @@
+Tulis algoritma lengkap untuk mendelete isi antrian dari kanan record per record sampai antrian kosong 
+Langkah-langkah Algoritma: 
+1.	Mulai 
+2.	Inisialisasi Front, Rear, dan MAX sesuai kondisi deque saat ini. 
+3.	Siapkan perulangan untuk menghapus data satu per satu dari kanan. 
+4.	Periksa kondisi kosong: 
+	•	Jika Front = -1, tampilkan pesan “Deque kosong, proses delete dihentikan.” 
+	•	Hentikan perulangan. 
+5.	Ambil data dari Deque [Rear] dan tampilkan data yang dihapus.
+6.	Jika Front = Rear, artinya hanya ada satu data - set Front = Rear = -1 (deque menjadi kosong). 
+7.	Jika Rear  = 0, maka set Rear = MAX - 1(bergerak melingkar ke kiri). 
+8.	Jika tidak, kurangi Rear = Rear - 1. 
+9.	Ulangi langkah 4–8 sampai deque kosong.1
+10.	 Selesai

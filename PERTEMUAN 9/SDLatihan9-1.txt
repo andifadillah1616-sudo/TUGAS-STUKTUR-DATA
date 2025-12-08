@@ -1,0 +1,24 @@
+a)	Sebutkan nama dan isi tiap-tiap pointer 
+	•	P → menunjuk node di alamat 1000; P - > INFO = 1 dan P - > LINK = 800 (menunjuk node dengan INFO = 4). 
+	•	Q → menunjuk node di alamat 800; Q - > INFO = 4 dan Q - > LINK = 1400 (menunjuk node dengan INFO = 5). 
+	•	R → menunjuk node di alamat 1400; R->INFO = 5 dan R->LINK= 1100 (menunjuk node dengan INFO=7). 
+	•	S → menunjuk node di alamat 1100; S->INFO= 7 dan S->LINK = NULL (tidak menunjukkenode lain).
+
+b)	Sebutkan pointer - pointer yang bernilai sama 
+	•	Q->LINK == R (Q->LINK menunjuk node 1400, sama dengan pointer R) — TRUE. 
+	•	Q->LINK->LINK == S (Q->LINK->LINK menunjuk node 1100, sama dengan pointer S) —TRUE.
+c)	Sebutkan TRUE atau FALSE kondisi pada intruksi tiap pernyataan dibawah ini : 
+	i. if (P->LINK == R) 
+	•	P->LINK = node(800), R = node(1400) →FALSE 
+	ii. if (Q->LINK == R->LINK) 
+	•	Q->LINK = node(1400), R->LINK=node(1100) → FALSE 
+	iii. if (Q->LINK->LINK == S->LINK) 
+	•	Q->LINK->LINK = node(1100), S->LINK=NULL → FALSE 
+	iv. if (Q == R) 
+	•	Q menunjuk 800, R menunjuk 1400 →FALSE
+	v. if (Q->LINK == R) 
+	•	Q->LINK = 1400, R = 1400 →TRUE
+	vi. if (R->LINK->INFO == 5) 
+	•	R->LINK->INFO = node(1100).INFO=7→7== 5 → FALSE 
+	vii. if (Q->INFO == 4) 
+	•	Q->INFO = 4 →TRUE

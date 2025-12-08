@@ -1,0 +1,15 @@
+Tulis algoritma yang lengkap untuk mengisi antrian dari kanan record per record sampai antrian penuh kanan, atau tidak bisa diisi lagi dari kanan. Langkah-langkah Algoritma: 
+1.	Mulai 
+2.	Inisialisasi variabel Front = -1, Rear =-1, dan MAX sebagai kapasitas deque. 
+3.	Siapkan perulangan untuk memasukkan record satu per satu. 
+4.	Periksa kondisi penuh kanan: 
+	•	Jika (Front = 0  & Rear = MAX- 1) atau (Front = Rear + 1), 
+		maka tampilkan pesan “Deque penuh kanan, proses dihentikan.”
+	•	Hentikan perulangan. 
+5.	Jika deque kosong (Front = -1), maka set Front = Rear = 0.
+6.	Jika Rear = MAX - 1, maka atur Rear = 0 (bergerak melingkar). 
+7.	Jika tidak, naikkan Rear = Rear + 1. 
+8.	Masukkan data ke Deque [Rear]. 
+9.	Tampilkan pesan “Record berhasil dimasukkan dari kanan.” 
+10.	 Ulangi langkah 4–9 sampai deque penuh. 
+11.	Selesai

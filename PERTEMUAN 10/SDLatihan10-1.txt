@@ -1,0 +1,7 @@
+1.	Jelaskan pengertian dari konsep LIFO 
+	Konsep LIFO berarti data yang dimasukkan terakhir akan keluar terlebih dahulu. 
+	Struktur data yang menggunakan prinsip ini adalah Stack (tumpukan). 
+	Ibarat tumpukan piring, piring yang paling atas (terakhir ditaruh) akan menjadi yang pertama diambil.
+	Operasi utamanya adalah:
+	•	PUSH → menambah data ke atas tumpukan. 
+	•	POP → menghapus data dari atas tumpukan

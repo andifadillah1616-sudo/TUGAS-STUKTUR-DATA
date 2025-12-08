@@ -1,0 +1,7 @@
+2.	Jelaskan pengertian dari konsep FIFO
+	Konsep FIFO berarti data yang pertama masuk akan keluar terlebih dahulu. 
+	Struktur data yang menggunakan prinsip ini adalah Queue (antrian). 
+	Ibarat antrian di loket, orang yang datang pertama akan dilayani lebih dulu. 
+	Operasi utamanya adalah: 
+	•	ENQUEUE (INSERT) →menambahdatadi belakang antrian. 
+	•	DEQUEUE (DELETE) →menghapus datadari depan antrian

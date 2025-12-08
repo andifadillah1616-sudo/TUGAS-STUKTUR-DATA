@@ -1,0 +1,20 @@
+Sebutkan ciri bahwa double ended queue pada: 
+a.	Kosong tidak ada isinya 
+	FRONT = -1 dan REAR = -1
+Artinya: Tidak ada data sama sekali di dalam deque.
+
+b.	Penuh kanan, tak bisa diisi dari kanan 
+	(REAR + 1) % MAX = FRONT
+Artinya: Bagian kanan (REAR) sudah mencapai batas array atau posisi berikutnya dari REAR adalah FRONT.
+
+c.	Penuh kiri, tidak bisa diisi dari kiri 
+	(FRONT - 1 + MAX) % MAX = REAR
+Artinya: Bagian kiri (FRONT) sudah mencapai posisi sebelum REAR atau tidak memiliki ruang kosong ke arah kiri.
+
+d.	Penuh total, tidak bisa diisi dari kiri maupun dari kanan
+	(FRONT = (REAR + 1) % MAX)
+Artinya: Kedua sisi sudah saling berhadapan, sehingga tidak ada ruang kosong sama sekali. 
+
+e.	Hanya diisi 10 pengantr
+	Jumlah elemen = (REAR - FRONT + MAX) % MAX + 1 = 10
+Artinya: Jumlah elemen yang sedang aktif atau terisi di dalam deque adalah 10.

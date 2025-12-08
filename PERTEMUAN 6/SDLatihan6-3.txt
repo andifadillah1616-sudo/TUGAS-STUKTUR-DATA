@@ -1,0 +1,43 @@
+Tulis algoritma dasar untuk: 
+1.	Inisialisasi 
+Algoritma INISIALISASI
+	1.	FRONT ← 0
+	2.	REAR ← 0
+	3.	Tulis "Antrian berhasil diinisialisasi (kosong)"
+	4.	Selesai
+
+2.	Insert sebuah record 
+Algoritma INSERT
+	a.	Jika REAR = MAX maka
+  		  Tulis "Antrian penuh, tidak bisa menambah data"
+	b.	Jika tidak penuh:
+		•	Jika FRONT = 0 maka FRONT ← 1
+		•	REAR ← REAR + 1
+		•	QUEUE[REAR] ← DATA
+		•	Tulis "Data berhasil dimasukkan ke antrian"
+	c.	Selesai
+
+3.	Delete sebuah record
+Algoritma DELETE
+	a.	Jika FRONT = 0 maka
+  		  Tulis "Antrian kosong, tidak ada data yang dihapus"
+	b.	Jika tidak kosong:
+		•	DATA ← QUEUE[FRONT]
+		•	FRONT ← FRONT + 1
+		•	Jika FRONT > REAR maka
+  		     	 FRONT ← 0
+    		   	 REAR ← 0
+		•	Tulis "Data berhasil dihapus dari antrian"
+	c.	Selesai
+
+4.	Reset
+Algoritma RESET
+	1. FRONT ← 0
+	2. REAR ← 0
+	3. Tulis "Antrian telah dikosongkan"
+	4. Selesai
+PENJELASAN:
+•	FRONT menunjukkan posisi data pertama,
+•	REAR menunjukkan posisi data terakhir,
+•	MAX adalah kapasitas maksimum antrian.
+Dengan algoritma ini, antrian dapat diinisialisasi, ditambah data, dihapus, dan dikosongkan kembali dengan mudah

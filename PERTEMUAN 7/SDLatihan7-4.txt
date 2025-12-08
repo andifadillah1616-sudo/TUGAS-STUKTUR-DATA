@@ -1,0 +1,14 @@
+Tulis algoritma yang lengkap untuk mendeleteisi antrian record per record sebanyak 10 record selama antrian masih ada isinya. Apabila antrian sudah kosong, walaupun belum mendelete sebanyak 10 record, maka proses delete dihentikan. Langkah-langkah Algoritma:
+1.	Mulai 
+2.	Inisialisasi Front, Rear, dan MAX sesuai kondisi antrian saat ini. 
+3.	Siapkan perulangan i = 1 sampai 10 untuk melakukan penghapusan record satu per satu. 
+4.	Periksa kondisi kosong: 
+	•	Jika Front == -1, tampilkan pesan “Antrian kosong, proses penghapusan dihentikan.”
+	•	Hentikan perulangan (keluar dari proses). 
+5.	Ambil data dari posisi Queue[Front] dantampilkan sebagai data yang dihapus.
+6.	Jika Front == Rear, artinya data terakhir telah dihapus, maka set: 
+	•	Front = Rear = -1 (antrian kosong kembali).
+7.	Jika tidak, ubah posisi Front menjadi: 
+	•	Front = (Front + 1) % MAX (bergerak secara melingkar).
+8.	Ulangi langkah 4–7 hingga 10 kali atau sampai antrian kosong.
+9.	Selesai.

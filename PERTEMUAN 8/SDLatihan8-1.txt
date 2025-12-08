@@ -1,0 +1,66 @@
+Tulis algoritma dasar double ended queue untuk kondisi: 
+a.	Algoritma Inisialisasi 
+	1.	FRONT ← -1
+	2.	REAR ← -1
+	3.	Tulis "Deque berhasil diinisialisasi (kosong)"
+	4.	Selesai
+
+b.	Insert sebuah record dari kanan 
+	Algoritma INSERT_KANAN
+	1. Jika (FRONT = 0 dan REAR = MAX - 1) atau (REAR + 1 = FRONT) maka
+	   Tulis "Deque penuh"
+	2. Jika FRONT = -1 maka        // Deque masih kosong
+ 		FRONT ← 0
+   		REAR ← 0
+	3. Lain jika REAR = MAX - 1 maka
+ 		REAR ← 0                // Melingkar ke awal
+	4. Lain
+ 		REAR ← REAR + 1
+	5. DEQUE[REAR] ← DATA
+	6. Tulis "Data berhasil ditambahkan dari kanan"
+	7. Selesai
+
+c.	Insert sebuah record dari kiri 
+	Algoritma INSERT_KIRI
+	1. Jika (FRONT = 0 dan REAR = MAX - 1) atau (REAR + 1 = FRONT) maka
+ 	      Tulis "Deque penuh"
+	2. Jika FRONT = -1 maka        // Deque masih kosong
+	       FRONT ← 0
+ 	      REAR ← 0
+	3. Lain jika FRONT = 0 maka
+       		FRONT ← MAX - 1         // Melingkar ke akhir
+	4. Lain
+   	    FRONT ← FRONT - 1
+	5. DEQUE[FRONT] ← DATA
+	6. Tulis "Data berhasil ditambahkan dari kiri"
+	7. Selesai
+
+d.	Delete sebuah record dari kanan 
+	Algoritma DELETE_KANAN
+	1. Jika FRONT = -1 maka
+	       Tulis "Deque kosong"
+	2. DATA ← DEQUE[REAR]
+	3. Jika FRONT = REAR maka
+ 	      FRONT ← -1
+ 	      REAR ← -1
+	4. Lain jika REAR = 0 maka
+       REAR ← MAX - 1
+	5. Lain
+  	     REAR ← REAR - 1
+	6. Tulis "Data dihapus dari kanan: ", DATA
+	7. Selesai
+
+e.	Delete sebuah record dari kiri
+	Algoritma DELETE_KIRI
+	1. Jika FRONT = -1 maka
+	       Tulis "Deque kosong"
+	2. DATA ← DEQUE[FRONT]
+	3. Jika FRONT = REAR maka
+	       FRONT ← -1
+	       REAR ← -1
+	4. Lain jika FRONT = MAX - 1 maka
+ 	      FRONT ← 0
+	5. Lain
+ 	      FRONT ← FRONT + 1
+	6. Tulis "Data dihapus dari kiri: ", DATA
+	7. Selesai

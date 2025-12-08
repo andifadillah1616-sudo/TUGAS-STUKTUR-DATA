@@ -1,0 +1,30 @@
+Tulis algoritma yang lengkap untuk mendelete antrian record per record sebanyak 10 record selama antrian masih ada isinya. Bila antrian sudah kosong, walaupun belum mendelete sebanyak 10 record, proses delete dihentikan.
+Algoritma DELETE_ANTRIAN
+Algoritma DELETE_ANTRIAN
+Deklarasi:
+QUEUE : array [1..MAX]
+FRONT, REAR : integer
+DATA : record
+i : integer
+
+Deskripsi:
+1.	Untuk i ← 1 sampai 10 lakukan:
+    a. Jika FRONT = 0 maka
+       Tulis "Antrian kosong! Penghapusan dihentikan."
+       Keluar dari perulangan
+    b. Jika tidak kosong:
+       DATA ← QUEUE[FRONT]
+       Tulis "Record ke-", i, "dihapus:", DATA
+       FRONT ← FRONT + 1
+       Jika FRONT > REAR maka
+           FRONT ← 0
+           REAR ← 0
+           Tulis "Antrian sekarang kosong."
+           Keluar dari perulangan
+2.	Tulis "Proses penghapusan selesai."
+3.	Selesai
+
+PENJELASAN:
+•	Proses dilakukan maksimal 10 kali, tetapi akan berhenti lebih cepat jika antrian sudah kosong.
+•	Setiap kali delete, elemen paling depan (FRONT) diambil dan nilai FRONT bertambah satu.
+•	Jika setelah delete posisi FRONT > REAR, berarti antrian kosong dan proses berhenti otomatis.

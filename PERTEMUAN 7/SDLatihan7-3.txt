@@ -1,0 +1,18 @@
+Tulis algoritma yang lengkap untuk mengisi antrian  record per record sebanyak 10 record selama antrian belum penuh. Apabila antrian penuh, walaupun belum mengisi 10 record, proses pengisian dihentikan. Langkah-langkah Algoritma:
+	Mulai 
+	Inisialisasi variabel:
+	•	Front = -1 
+	•	Rear = -1 
+	•	MAX = kapasitas maksimum queue
+	Siapkan perulangan dari i = 1 sampai 10 untuk proses pengisian record satu per satu.
+	Periksa kondisi penuh: 
+	•	Jika (Rear + 1) % MAX== Front, maka tampilkan pesan “Antrian penuh, proses pengisian dihentikan.”
+	•	Hentikan proses pengisian (keluar dari perulangan). 
+	Jika antrian kosong (Front == -1), maka set: 
+	•	Front = Rear = 0 
+	Jika tidak kosong, maka ubah posisi Rear menjadi: 
+	•	Rear = (Rear + 1) % MAX
+	Masukkan data ke Queue[Rear]. 
+	Tampilkan pesan “Record ke-i berhasil dimasukkan ke antrian.” 
+	Ulangi langkah 4–8 sampai 10 kali atausampai antrian penuh. 
+	Selesai
